@@ -21,13 +21,13 @@ const AboutPage = ({ data }, location) => {
             Clean, minimal, and deeply customisable. London is a theme made for
             people who appreciate simple lines.
           </h2>
-          <figure className="kg-card kg-image-card kg-width-full">
+          {/* <figure className="kg-card kg-image-card kg-width-full">
             <Img
               fluid={data.benchAccounting.childImageSharp.fluid}
               className="kg-image"
             />
             <figcaption>Large imagery is at the heart of this theme</figcaption>
-          </figure>
+          </figure> */}
           <h3 id="dynamic-styles">Dynamic styles</h3>
           <p>
             London comes with photo-centric main layout best suited to
@@ -62,15 +62,15 @@ const indexQuery = graphql`
         title
       }
     }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
+    # benchAccounting: file(
+    #   relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
+    # ) {
+    #   childImageSharp {
+    #     fluid(maxWidth: 1360) {
+    #       ...GatsbyImageSharpFluid
+    #     }
+    #   }
+    # }
   }
 `
 
