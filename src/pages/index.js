@@ -13,7 +13,6 @@ import "../utils/css/screen.css"
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  let postCounter = 0
 
   return (
     <Layout title={siteTitle}>
@@ -29,16 +28,11 @@ const BlogIndex = ({ data }, location) => {
           </h2>
         </header>
       )}
+      <div className="post-feed-descriptiopn">Our Events ----:</div>
       <div className="post-feed">
         {posts.map(({ node }) => {
-          postCounter++
           return (
-            <PostCard
-              key={node.fields.slug}
-              count={postCounter}
-              node={node}
-              postClass={`post`}
-            />
+            <PostCard key={node.fields.slug} node={node} postClass={`post`} />
           )
         })}
       </div>
