@@ -22,13 +22,13 @@ const BlogIndex = ({ data }, location) => {
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
-        <header className="page-head">
+        <header className="page-head post-content">
           <h2 className="page-head-title">
             {data.site.siteMetadata.description}
           </h2>
         </header>
       )}
-      <div className="post-feed-descriptiopn">Our Events ----:</div>
+      <div className="post-feed-description">Our Events</div>
       <div className="post-feed">
         {posts.map(({ node }) => {
           return (

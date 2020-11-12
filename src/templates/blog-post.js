@@ -4,6 +4,7 @@ import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Map from "../components/map"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -21,13 +22,16 @@ class BlogPostTemplate extends React.Component {
         >
           <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
+            {post.frontmatter.description && (
+              <p className="post-content-excerpt">
+                {post.frontmatter.description}
+              </p>
+            )}
+            <h3 className="post-content-info">
+              {post.frontmatter.date} @ {post.frontmatter.time} -{" "}
+              {post.frontmatter.location}
+            </h3>
           </header>
-
-          {post.frontmatter.description && (
-            <p className="post-content-excerpt">
-              {post.frontmatter.description}
-            </p>
-          )}
 
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
@@ -38,12 +42,11 @@ class BlogPostTemplate extends React.Component {
               />
             </div>
           )}
-
+          <Map location={post.frontmatter.location} />
           <div
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-
           <footer className="post-content-footer">
             {/* There are two options for how we display the byline/author-info.
         If the post has more than one author, we load a specific template
@@ -72,8 +75,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "YYYY.MM.DD")
         description
+        location
+        time
         thumbnail {
           childImageSharp {
             fluid(maxWidth: 1360) {

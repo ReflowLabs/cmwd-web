@@ -6,11 +6,15 @@ export default props => (
   <article
     className={`post-card no-image ${props.postClass}`}
     style={
-      props.node.frontmatter.thumbnail && {
-        backgroundImage: `
+      props.node.frontmatter.thumbnail
+        ? {
+            backgroundImage: `
         url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' fill='${props.node.frontmatter.color}'><path d='M0 64 L48 64 L64 0 L0 16 Z'/></svg>"),
         url(${props.node.frontmatter.thumbnail.childImageSharp.fluid.src})`,
-      }
+          }
+        : {
+            background: `${props.node.frontmatter.color || "#ffaee2"}`,
+          }
     }
   >
     <Content props={props} />

@@ -391,6 +391,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
 }
+.post-feed-description {
+  padding: 2em;
+  font-size: 2.2rem;
+  text-align: center;
+}
 
 .post-card {
   position: relative;
@@ -416,6 +421,7 @@ body {
   }
   .post-card-content {
     margin-top: 18em;
+    right: 0 !important;
   }
 }
 
@@ -435,7 +441,7 @@ body {
   justify-content: center;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 50%;
   bottom: 0;
   left: 0;
   color: var(--color-bg-dark);
@@ -481,6 +487,7 @@ body {
 
 .post-card-title {
   margin: 0;
+  font-style: italic;
   display: inline-block;
   font-size: 3.4rem;
   /* max-width: 70%; */
@@ -558,6 +565,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.post-content-info {
+  margin: -1vw 0 3vw;
+  text-align: center;
+  font-size: 4vw;
 }
 
 .post-content-title {
@@ -812,4 +824,9 @@ body {
   max-width: 70%;
   margin: auto;
   text-align: center;
+}
+
+.map-iframe {
+  background: #333;
+  height: 400px;
 }
