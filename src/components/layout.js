@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Logo from "./logo"
 
 const Layout = props => {
   const { title, children } = props
@@ -24,7 +25,7 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" class="site-head-left">
+          <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
               {/* <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
@@ -41,27 +42,25 @@ const Layout = props => {
             </ul>
           </nav>
           <div className="site-head-center">
-            <Link className="site-head-logo" to={`/`}>
-              {title}
-            </Link>
+            <Logo title={title} />
           </div>
           <div className="site-head-right">
-            <div className="social-links">
+            <div className="right-links">
               <a
-                href="https://www.facebook.com"
-                title="Facebook"
+                href="https://www.reflow.dev"
+                title="Reflow Labs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Facebook
+                Reflow
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.incubator.yellow.com/coworking"
                 title="Twitter"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Twitter
+                Yellow
               </a>
               <Link
                 to={`/rss.xml`}
@@ -72,7 +71,7 @@ const Layout = props => {
                 RSS
               </Link>
               <a
-                href="https://github.com/vaporwavy/gatsby-london-after-midnight"
+                href="https://github.com/reflow/cmwd-web"
                 title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"

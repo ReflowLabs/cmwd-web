@@ -195,7 +195,8 @@ body {
   display: block;
   padding: 10px;
   color: var(--color-base);
-  font-size: 2.1rem;
+  font-style: italic;
+  font-size: 3rem;
   line-height: 1em;
   font-weight: 700;
   text-transform: uppercase;
@@ -221,7 +222,7 @@ body {
   align-items: center;
 }
 
-.social-links {
+.right-links {
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -333,7 +334,7 @@ body {
     width: 100%;
     margin-top: 3vw;
   }
-  .social-links {
+  .right-links {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -398,16 +399,23 @@ body {
   height: 35vw;
   /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
   /* based #1d1d1f */
-  background: linear-gradient(135deg, #242426 0%, #161618 100%) center center;
-  background-size: cover;
+  /* background: linear-gradient(135deg, #242426 0%, #161618 100%) center center; */
+  background-repeat: no-repeat;
+  background-size: 65% 150%, auto 100%;
+  background-position: 0 bottom, left 110% top 0;
   overflow: hidden;
   counter-increment: posts;
 }
 
 @media (max-width: 700px) {
   .post-card {
-    flex: 1 1 100%;
-    height: 70vw;
+    /* flex: 1 1 100%; */
+    height: 35em;
+    background-position: 0 10em, 0 0;
+    background-size: 150% 100%, 100% auto;
+  }
+  .post-card-content {
+    margin-top: 18em;
   }
 }
 
@@ -430,8 +438,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  color: var(--color-base);
-  background: rgba(0, 0, 0, 0.1);
+  color: var(--color-bg-dark);
+  /* background: rgba(0, 0, 0, 0.1); */
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
@@ -440,7 +448,7 @@ body {
 .post-card-body,
 .post-card-tag-link {
   font-size: 1.6rem;
-  color: var(--color-sub-base);
+  color: var(--color-bg-dark);
 }
 
 .post-card-readmore {
@@ -480,20 +488,6 @@ body {
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
 
-/* Posts without images */
-.post-card.no-image:before {
-  display: block;
-  content: counter(posts);
-  position: absolute;
-  bottom: -0.15em;
-  right: 5vw;
-  font-size: 28vw;
-  line-height: 1em;
-  font-weight: var(--font-heavy);
-  letter-spacing: -0.1em;
-  color: rgba(0, 0, 0, 0.2);
-}
-
 .post-card.no-image .post-card-content {
   justify-content: flex-start;
   align-items: flex-start;
@@ -505,7 +499,10 @@ body {
   font-size: 5rem;
   line-height: 1.15em;
   text-align: left;
-  color: var(--color-base);
+  color: var(--color-bg-dark);
+}
+.post-card a {
+  color: var(--color-bg-dark);
 }
 
 .post-card.no-image:hover .post-card-title {

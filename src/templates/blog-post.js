@@ -24,7 +24,9 @@ class BlogPostTemplate extends React.Component {
           </header>
 
           {post.frontmatter.description && (
-            <p class="post-content-excerpt">{post.frontmatter.description}</p>
+            <p className="post-content-excerpt">
+              {post.frontmatter.description}
+            </p>
           )}
 
           {post.frontmatter.thumbnail && (

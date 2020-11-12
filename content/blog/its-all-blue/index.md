@@ -1,11 +1,11 @@
 ---
 title: It's all blue
-date: "2019-05-06"
-tags: [blue,color]
-thumbnail: ./cody-davis-253928-unsplash.jpg
+date: "2020-11-30"
+tags: [blue, color]
+color: "rgba(69,254,175,1)"
+number: 1
+thumbnail: ./cmwd-01.jpg
 description: What if everything you knew was turned to blue?
 ---
 
-![It's all blue](./cody-davis-253925-unsplash.jpg)
-
-![It's all blue](./cody-davis-259003-unsplash.jpg)
+Hello
