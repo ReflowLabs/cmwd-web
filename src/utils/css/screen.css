@@ -414,12 +414,12 @@ body {
 
 @media (max-width: 700px) {
   .post-card {
-    height: 42em;
-    background-position: 0 9em, 0 0;
-    background-size: 200% 100%, 100% auto;
+    height: 125vw;
+    background-position: 0 30vw, 0 0;
+    background-size: 200% 100%, auto 63vw;
   }
   .post-card-content {
-    margin-top: 21em;
+    margin-top: 60vw;
     right: 0 !important;
   }
 }
