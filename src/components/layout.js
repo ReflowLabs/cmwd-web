@@ -30,15 +30,15 @@ const Layout = props => {
               {/* <li className="nav-home nav-current" role="menuitem">
                 <Link to={`/`}>Home</Link>
               </li> */}
-              <li className="nav-about" role="menuitem">
+              {/* <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>About</Link>
               </li>
               <li className="nav-elements" role="menuitem">
                 <Link to={`/elements`}>Elements</Link>
-              </li>
-              <li className="nav-tags" role="menuitem">
+              </li> */}
+              {/* <li className="nav-tags" role="menuitem">
                 <Link to={`/tags`}>Tags</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
           <div className="site-head-center">
@@ -46,14 +46,14 @@ const Layout = props => {
           </div>
           <div className="site-head-right">
             <div className="right-links">
-              <a
+              {/* <a
                 href="https://www.reflow.dev"
                 title="Reflow Labs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Reflow
-              </a>
+              </a> */}
               <a
                 href="https://www.incubator.yellow.com/coworking"
                 title="Twitter"
@@ -70,14 +70,14 @@ const Layout = props => {
               >
                 RSS
               </Link>
-              <a
-                href="https://github.com/reflow/cmwd-web"
+              {/* <a
+                href="https://github.com/ReflowLabs/cmwd-web"
                 title="GitHub"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 GitHub
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
@@ -89,11 +89,11 @@ const Layout = props => {
       </main>
       <footer className="site-foot">
         <Link to={`/`}>{title}</Link>
-        <br />
+        {/* <br />
         {`Made with <3 by `}
         <a href="https://reflow.dev" target="_blank" rel="noopener noreferrer">
           Reflow Labs
-        </a>
+        </a> */}
       </footer>
     </div>
   )
