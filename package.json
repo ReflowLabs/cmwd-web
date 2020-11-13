@@ -1,15 +1,12 @@
 {
-  "name": "gatsby-london-after-midnight",
+  "name": "cmwd-web",
   "private": true,
-  "description": "A custom, image-centric theme for Gatsby",
-  "version": "1.0.2",
-  "author": "Vaporwavy <i@ttv8.me> (https://vaporwavy.io)",
+  "description": "Website for Chiang Mai Web Developers Meetup, based on gatsby-london-after-midnight",
+  "version": "0.0.1",
+  "author": "Reflow Labs",
   "browserslist": [
     "last 2 versions"
   ],
-  "bugs": {
-    "url": "https://github.com/vaporwavy/gatsby-london-after-midnight/issues"
-  },
   "dependencies": {
     "gatsby": "^2.4.2",
     "gatsby-image": "^2.0.41",
@@ -49,19 +46,14 @@
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
-    "gatsby",
-    "ghost",
-    "gallery",
-    "blog",
-    "starter"
+    "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vaporwavy/gatsby-london-after-midnight.git"
+    "url": "git+https://github.com/ReflowLabs/cmwd-web.git"
   },
   "scripts": {
     "build": "gatsby build",
