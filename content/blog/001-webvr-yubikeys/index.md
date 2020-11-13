@@ -10,7 +10,7 @@ location: Yellow Coworking, Chiang Mai
 description: The very first CMWD; we look at creating virtual reality experiences with React.js, and how to do hardware security properly using Yubikeys.
 ---
 
-Chiang Mai Web Development Meetup is a newly-launched regularly-scheduled knowledge-sharing event that invites all developers, aspiring developers and the web-curious to enjoy technical presentations and mingle with like minded attendees.
+Chiang Mai Web Developers Meetup is a newly-launched regularly-scheduled knowledge-sharing event that invites all developers, aspiring developers and the web-curious to enjoy technical presentations and mingle with like minded attendees.
 
 Join us on the last Monday of every month for intriguing and exciting topics that cover the latest trends in web technologies, frameworks, languages and libraries. Whether you are an absolute beginner or a battle-hardened veteran, you’re sure to acquire valuable knowledge about a wide number of topics in the ever-changing web development landscape.
 

@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Map from "../components/map"
+import PostCard from "../components/postCard"
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -17,10 +18,11 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <article
-          className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
-        >
-          <header className="post-content-header">
+        <header className="post-header">
+          <PostCard node={post} noLinks />
+        </header>
+        <article className={`post-content`}>
+          {/* <header className="post-content-header">
             <h1 className="post-content-title">{post.frontmatter.title}</h1>
             {post.frontmatter.description && (
               <p className="post-content-excerpt">
@@ -31,28 +33,13 @@ class BlogPostTemplate extends React.Component {
               {post.frontmatter.date} @ {post.frontmatter.time} -{" "}
               {post.frontmatter.location}
             </h3>
-          </header>
-
-          {post.frontmatter.thumbnail && (
-            <div className="post-content-image">
-              <Img
-                className="kg-image"
-                fluid={post.frontmatter.thumbnail.childImageSharp.fluid}
-                alt={post.frontmatter.title}
-              />
-            </div>
-          )}
-          <Map location={post.frontmatter.location} />
+          </header> */}
           <div
             className="post-content-body"
             dangerouslySetInnerHTML={{ __html: post.html }}
           />
-          <footer className="post-content-footer">
-            {/* There are two options for how we display the byline/author-info.
-        If the post has more than one author, we load a specific template
-        from includes/byline-multiple.hbs, otherwise, we just use the
-        default byline. */}
-          </footer>
+          <hr />
+          <Map location={post.frontmatter.location} />
         </article>
       </Layout>
     )
@@ -73,10 +60,16 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "YYYY.MM.DD")
         description
+        color
+        tags
+        number
         location
         time
         thumbnail {

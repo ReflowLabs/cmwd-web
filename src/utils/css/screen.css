@@ -96,7 +96,7 @@ body {
 }
 
 .page-head-title {
-  margin: 0;
+  margin: 10vw 0;
   font-size: 4.2rem;
   color: var(--color-base);
 }
@@ -119,7 +119,7 @@ body {
 }
 
 .site-foot {
-  margin: 3vw 0 1vw;
+  margin: 3em 0;
   text-align: center;
   color: color(var(--color-border) l(-20%));
   font-size: 1.4rem;
@@ -391,16 +391,28 @@ body {
   font-size: 2.2rem;
   text-align: center;
 }
+.post-card-image,
+.post-card-color {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.post-card-image {
+  left: 45%;
+  background-size: cover;
+  background-position: left 30% top 50%;
+}
 
+.post-card-color {
+  background-repeat: no-repeat;
+  background-size: 65% 150%;
+  background-position: 0 bottom;
+}
 .post-card {
   position: relative;
-  /* background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center; */
-  /* based #1d1d1f */
   background: #222;
-  /* min-height: 30em; */
-  background-repeat: no-repeat;
-  background-size: 65% 150%, auto 100%;
-  background-position: 0 bottom, left 110% top 0;
   min-height: 35vw;
   margin-bottom: 1vw;
 }
@@ -414,13 +426,20 @@ body {
 
 @media (max-width: 700px) {
   .post-card {
-    height: 125vw;
-    background-position: 0 30vw, 0 0;
-    background-size: 200% 100%, auto 63vw;
+    height: 150vw;
   }
   .post-card-content {
-    margin-top: 60vw;
+    margin-top: 87vw;
     right: 0 !important;
+  }
+  .post-card-color {
+    right: 0;
+    top: 20vw;
+    background-size: 160% 65%;
+  }
+  .post-card-image {
+    left: 0;
+    bottom: 30vw;
   }
 }
 
@@ -434,17 +453,12 @@ body {
 }
 
 .post-card-content {
-  /* flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center; */
   position: absolute;
   top: 0;
   right: 50%;
   bottom: 0;
   left: 0;
   color: var(--color-bg-dark);
-  /* background: rgba(0, 0, 0, 0.1); */
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
@@ -495,7 +509,7 @@ body {
   text-align: center;
   transition: all 0.3s cubic-bezier(0.33, 0, 0.2, 1);
 }
-.post-card-title:hover {
+a .post-card-title:hover {
   text-decoration: underline;
 }
 
@@ -504,6 +518,9 @@ body {
   align-items: flex-start;
   padding: 4vw;
   flex-direction: column;
+}
+.post-content .post-card {
+  margin: 0 -10vw;
 }
 
 .post-card .post-card-title {
@@ -555,10 +572,19 @@ body {
 /* Post Content
 /* ---------------------------------------------------------- */
 
+hr {
+  opacity: 0.2;
+}
+
 .post-content {
   max-width: 720px;
   margin: 0 auto;
-  padding: 6vw 0;
+  padding: 0 0;
+}
+
+.post-header {
+  margin: 5em auto;
+  max-width: 900px;
 }
 
 .post-content-header {
@@ -826,7 +852,11 @@ body {
   text-align: center;
 }
 
+.map {
+  text-align: center;
+}
 .map-iframe {
+  margin: 1em;
   background: #333;
   height: 400px;
 }
