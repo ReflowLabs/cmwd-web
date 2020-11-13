@@ -60,7 +60,9 @@ const indexQuery = graphql`
             title
             description
             tags
+            time
             color
+            number
             thumbnail {
               childImageSharp {
                 fluid(maxWidth: 1360) {

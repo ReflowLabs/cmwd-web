@@ -2,9 +2,13 @@ import React, { Component } from "react"
 import { Link } from "gatsby"
 import Tags from "./tag"
 
+function padNumber(num) {
+  return `000${num}`.slice(-3)
+}
+
 export default props => (
   <article
-    className={`post-card no-image ${props.postClass}`}
+    className={`post-card ${props.postClass}`}
     style={
       props.node.frontmatter.thumbnail
         ? {
@@ -26,7 +30,9 @@ class Content extends Component {
     const { props } = this.props
     return (
       <div className="post-card-content">
-        <div>
+        <div className="post-card-info">
+          EVENT {padNumber(props.node.frontmatter.number)}
+          {" | "}
           <Tags tags={props.node.frontmatter.tags} />
         </div>
         <div>
@@ -36,17 +42,20 @@ class Content extends Component {
             </h2>
           </Link>
         </div>
-        <div className="post-card-date">{props.node.frontmatter.date}</div>
+        <div className="post-card-date">
+          {props.node.frontmatter.date}, {props.node.frontmatter.time}
+        </div>
         <div className="post-card-body">
           {props.node.frontmatter.description || props.node.excerpt}
         </div>
+        <div></div>
         <div>
           <Link
             to={props.node.fields.slug}
             className="post-card-link post-card-readmore"
           >
             {props.node.frontmatter.description || props.node.excerpt
-              ? "Read more"
+              ? "Read More >>"
               : null}
           </Link>
         </div>
