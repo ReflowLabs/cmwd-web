@@ -407,8 +407,8 @@ body {
 
 .post-card-color {
   background-repeat: no-repeat;
-  background-size: 65% 150%;
-  background-position: 0 bottom;
+  background-size: 65% 200%;
+  background-position: left -12% top 75%;
 }
 .post-card {
   position: relative;
@@ -434,8 +434,9 @@ body {
   }
   .post-card-color {
     right: 0;
-    top: 20vw;
-    background-size: 160% 65%;
+    top: 65vw;
+    background-size: 350% 250%;
+    background-position: left 50% top 10%;
   }
   .post-card-image {
     left: 0;

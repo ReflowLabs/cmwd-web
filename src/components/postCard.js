@@ -7,7 +7,12 @@ function padNumber(num) {
 }
 
 export default props => (
-  <article className={`post-card ${props.postClass}`}>
+  <article
+    className={`post-card ${props.postClass}`}
+    style={{
+      backgroundColor: props.node.frontmatter.color,
+    }}
+  >
     <div
       className="post-card-image"
       style={{
