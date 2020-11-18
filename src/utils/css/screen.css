@@ -98,6 +98,7 @@ body {
 .page-head-title {
   margin: 10vw 0;
   font-size: 4.2rem;
+  max-width: 100%;
   color: var(--color-base);
 }
 @media (max-width: 500px) {
