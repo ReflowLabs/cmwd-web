@@ -47,20 +47,20 @@ const Layout = props => {
           <div className="site-head-right">
             <div className="right-links">
               <a
-                href="https://t.me/joinchat/I4kEEhwAe_iI3mC8igyBxQ"
-                title="Reflow Labs"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Telegram
-              </a>
-              <a
                 href="https://www.incubator.yellow.com/coworking"
                 title="Twitter"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Yellow
+              </a>
+              <a
+                href="https://t.me/joinchat/I4kEEhwAe_iI3mC8igyBxQ"
+                title="Reflow Labs"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Telegram
               </a>
               <a
                 href="https://github.com/ReflowLabs/cmwd-web"
