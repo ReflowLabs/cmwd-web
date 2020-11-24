@@ -46,14 +46,14 @@ const Layout = props => {
           </div>
           <div className="site-head-right">
             <div className="right-links">
-              {/* <a
-                href="https://www.reflow.dev"
+              <a
+                href="https://t.me/joinchat/I4kEEhwAe_iI3mC8igyBxQ"
                 title="Reflow Labs"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Reflow
-              </a> */}
+                Telegram
+              </a>
               <a
                 href="https://www.incubator.yellow.com/coworking"
                 title="Twitter"
@@ -61,6 +61,14 @@ const Layout = props => {
                 rel="noopener noreferrer"
               >
                 Yellow
+              </a>
+              <a
+                href="https://github.com/ReflowLabs/cmwd-web"
+                title="GitHub"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
               </a>
               <Link
                 to={`/rss.xml`}
@@ -70,14 +78,6 @@ const Layout = props => {
               >
                 RSS
               </Link>
-              {/* <a
-                href="https://github.com/ReflowLabs/cmwd-web"
-                title="GitHub"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a> */}
             </div>
           </div>
         </div>
