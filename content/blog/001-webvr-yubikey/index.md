@@ -5,9 +5,21 @@ time: "18:00"
 color: "rgba(19,254,175,1)"
 thumbnail: ./cmwd-01.jpg
 tags: [3d, react, vr, security, auth]
-title: WebVR ⨉ YubiKey
+title: POSTPONED WebVR ⨉ YubiKey
 location: Yellow Coworking, Chiang Mai
 description: The very first CMWD; we look at creating virtual reality experiences with React.js, and how to do hardware security properly using YubiKeys.
+---
+
+## UPDATE 2020.11.29: POSTPONED
+
+⚠️⚠️⚠️
+
+Due to the recent Corona case in Chiang Mai, we have been informed by the venue that they are unable to host our event tomorrow. This even will be posponed and a new date will be announced in due course.
+
+Our apologies.
+
+⚠️⚠️⚠️
+
 ---
 
 Chiang Mai Web Developer Meetup is a newly-launched regularly-scheduled knowledge-sharing event that invites all developers, aspiring developers and the web-curious to enjoy technical presentations and mingle with like minded attendees.
