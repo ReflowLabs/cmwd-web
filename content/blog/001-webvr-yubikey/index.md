@@ -1,24 +1,33 @@
 ---
 number: 1
-date: "2020-11-30"
+date: "2020-12-28"
 time: "18:00"
 color: "rgba(19,254,175,1)"
 thumbnail: ./cmwd-01.jpg
+special: Postponed
 tags: [3d, react, vr, security, auth]
-title: POSTPONED WebVR ⨉ YubiKey
+title: WebVR ⨉ YubiKey
 location: Yellow Coworking, Chiang Mai
 description: The very first CMWD; we look at creating virtual reality experiences with React.js, and how to do hardware security properly using YubiKeys.
 ---
 
-## UPDATE 2020.11.29: POSTPONED
+<center>
 
 ⚠️⚠️⚠️
 
-Due to the recent Corona case in Chiang Mai, we have been informed by the venue that they are unable to host our event tomorrow. This even will be posponed and a new date will be announced in due course.
+### UPDATE 2020.11.29: EVENT POSTPONED
+
+Due to the recent Corona case in Chiang Mai, we have been informed by the venue that they are unable to host our event on 30th November. The event will be posponed until next month.
 
 Our apologies.
 
+_Originally scheduled for: 2020.11.30_
+
+_New date: 2020.12.28_
+
 ⚠️⚠️⚠️
+
+</center>
 
 ---
 

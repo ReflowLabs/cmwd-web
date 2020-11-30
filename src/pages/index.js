@@ -60,6 +60,7 @@ const indexQuery = graphql`
             title
             description
             tags
+            special
             time
             color
             number

@@ -63,6 +63,7 @@ export const pageQuery = graphql`
             description
             tags
             color
+            special
             number
             time
             thumbnail {

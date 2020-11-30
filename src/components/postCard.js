@@ -46,6 +46,11 @@ class Content extends Component {
           {" | "}
           <Tags tags={props.node.frontmatter.tags} />
         </div>
+        {props.node.frontmatter.special && (
+          <div className="post-card-special">
+            {props.node.frontmatter.special}
+          </div>
+        )}
         <div>
           {props.noLinks ? (
             title

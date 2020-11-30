@@ -69,6 +69,7 @@ export const pageQuery = graphql`
         description
         color
         tags
+        special
         number
         location
         time
