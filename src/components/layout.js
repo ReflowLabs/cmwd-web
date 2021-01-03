@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Logo from "./logo"
 
 const Layout = props => {
-  const { title, children } = props
+  const { title, children, location = {} } = props
   const [toggleNav, setToggleNav] = React.useState(false)
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
@@ -27,15 +27,21 @@ const Layout = props => {
           </a>
           <nav id="swup" className="site-head-left">
             <ul className="nav" role="menu">
-              {/* <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li> */}
+              <li
+                className={`${location.pathname === "/" && "nav-current"}`}
+                role="menuitem"
+              >
+                <Link to={`/`}>Events</Link>
+              </li>
               {/* <li className="nav-about" role="menuitem">
                 <Link to={`/about`}>About</Link>
-              </li>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
               </li> */}
+              <li
+                className={`${location.pathname === "/speak" && "nav-current"}`}
+                role="menuitem"
+              >
+                <Link to={`/speak`}>Become a Speaker</Link>
+              </li>
               {/* <li className="nav-tags" role="menuitem">
                 <Link to={`/tags`}>Tags</Link>
               </li> */}

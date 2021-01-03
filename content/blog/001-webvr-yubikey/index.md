@@ -15,7 +15,7 @@ description: The very first CMWD; we look at creating virtual reality experience
 
 _Thank you for attending CMWD 01!_
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/005OwbfXnho" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/005OwbfXnho" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
 
 </center>
 

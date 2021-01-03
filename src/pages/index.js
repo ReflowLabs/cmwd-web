@@ -9,16 +9,16 @@ import PostCard from "../components/postCard"
 // import "../utils/global.scss"
 import "../utils/normalize.css"
 import "../utils/css/screen.css"
-//TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
-const BlogIndex = ({ data }, location) => {
+
+const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout title={siteTitle}>
+    <Layout title={siteTitle} location={location}>
       <SEO
         title={siteTitle}
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        keywords={["chiang mai", "web development", "technology", "meetup"]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
