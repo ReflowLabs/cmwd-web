@@ -17,13 +17,16 @@ const SpeakPage = ({ data, location }) => {
     e.preventDefault()
     const formData = new FormData(e.target)
     const body = new URLSearchParams(formData).toString()
-    await fetch("")
     try {
-      await fetch("/", {
+      const res = await fetch("/", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body,
       })
+      console.log(res)
+      if (res.status != 200) {
+        throw new Error("There was an error")
+      }
       setState({ success: true })
     } catch (e) {
       setState({ error: e.message })
@@ -60,11 +63,14 @@ const SpeakPage = ({ data, location }) => {
             <i>Infomration submitted will remain confidential.</i>
           </p>
           <form
-            method="post"
             onSubmit={handleSubmit}
             name="contact"
+            method="post"
+            action="/speak/thanks/"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
           >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="row gtr-uniform">
               <div className="col-12 col-12-xsmall">
                 <input
@@ -120,8 +126,8 @@ const SpeakPage = ({ data, location }) => {
               </div>
               <div className="col-12">
                 <textarea
-                  name="demo-message"
-                  id="demo-message"
+                  name="description"
+                  id="description"
                   placeholder="Please briefly describe your talk, your experience on this topic, and why you find it interesting"
                   rows={6}
                   required
@@ -134,23 +140,35 @@ const SpeakPage = ({ data, location }) => {
                 Your level of experience on this topic:
               </div>
               <div className="col-3 col-6-small">
-                <input type="radio" id="skill-level-noob" name="skill-level" />
+                <input
+                  type="radio"
+                  id="skill-level-noob"
+                  name="skill-level-noob"
+                />
                 <label htmlFor="skill-level-noob">n00b</label>
               </div>
               <div className="col-3 col-6-small">
                 <input
                   type="radio"
                   id="skill-level-casual"
-                  name="skill-level"
+                  name="skill-level-casual"
                 />
                 <label htmlFor="skill-level-casual">Casual</label>
               </div>
               <div className="col-3 col-6-small">
-                <input type="radio" id="skill-level-pro" name="skill-level" />
+                <input
+                  type="radio"
+                  id="skill-level-pro"
+                  name="skill-level-pro"
+                />
                 <label htmlFor="skill-level-pro">Pro</label>
               </div>
               <div className="col-3 col-6-small">
-                <input type="radio" id="skill-level-elite" name="skill-level" />
+                <input
+                  type="radio"
+                  id="skill-level-elite"
+                  name="skill-level-elite"
+                />
                 <label htmlFor="skill-level-elite">1337</label>
               </div>
               <br />
