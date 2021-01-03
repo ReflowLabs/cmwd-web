@@ -744,11 +744,6 @@ hr {
 .post-content-body .fluid-width-video-wrapper {
   margin: 1.5em 0 3em;
 }
-
-.post-content-body hr {
-  margin: 4vw 0;
-}
-
 .post-content-body hr:after {
   content: "";
   position: absolute;

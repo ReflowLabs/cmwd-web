@@ -4,11 +4,21 @@ date: "2020-12-28"
 time: "18:00"
 color: "rgba(19,254,175,1)"
 thumbnail: ./cmwd-01.jpg
-special: Postponed
+special: Inaugural
 tags: [3d, react, vr, security, auth]
 title: WebVR ⨉ YubiKey
 location: Yellow Coworking, Chiang Mai
 description: The very first CMWD; we look at creating virtual reality experiences with React.js, and how to do hardware security properly using YubiKeys.
+---
+
+<center>
+
+_Thank you for attending CMWD 01!_
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/005OwbfXnho" frameborder="0" allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+
+</center>
+
 ---
 
 <center>
