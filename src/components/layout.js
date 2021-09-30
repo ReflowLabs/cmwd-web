@@ -54,15 +54,15 @@ const Layout = props => {
             <div className="right-links">
               <a
                 href="https://www.incubator.yellow.com/coworking"
-                title="Twitter"
+                title="Yellow"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Yellow
               </a>
               <a
-                href="https://t.me/joinchat/I4kEEhwAe_iI3mC8igyBxQ"
-                title="Reflow Labs"
+                href="https://t.me/cmwd_io"
+                title="Telegram"
                 target="_blank"
                 rel="noopener noreferrer"
               >
