@@ -7,3 +7,4 @@ tags: [rust]
 title: Introducing Rust Language
 location: Yellow Coworking, Chiang Mai
 description: Romain in the community would like to share some knowledge about the use of the Rust language for development
+---
